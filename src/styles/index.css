@@ -1,0 +1,45 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Base page styling */
+body {
+  @apply bg-slate-100 text-slate-900 antialiased;
+}
+
+/* Card base */
+.tm-card {
+  @apply bg-white shadow rounded p-4 mb-3 flex flex-col;
+}
+
+/* Priority badge base */
+.tm-badge {
+  @apply inline-block rounded-full px-2 py-1 text-xs font-semibold;
+}
+
+/* Buttons */
+.tm-btn-primary {
+  @apply bg-blue-600 hover:bg-blue-500 text-white px-4 py-2 rounded text-sm font-medium transition-colors;
+}
+
+.tm-btn-secondary {
+  @apply bg-gray-200 hover:bg-gray-100 text-gray-900 px-3 py-2 rounded text-sm font-medium transition-colors;
+}
+
+.tm-btn-danger {
+  @apply bg-red-600 hover:bg-red-500 text-white px-4 py-2 rounded text-sm font-medium transition-colors;
+}
+
+/* Inputs */
+.tm-input {
+  @apply w-full border rounded px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-blue-400;
+}
+
+/* Modal shell */
+.tm-modal-backdrop {
+  @apply fixed inset-0 bg-black bg-opacity-40 flex items-center justify-center z-50;
+}
+
+.tm-modal {
+  @apply bg-white p-6 rounded shadow-lg w-full max-w-md;
+}
